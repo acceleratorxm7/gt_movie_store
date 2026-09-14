@@ -9,9 +9,7 @@
             <h2>Login</h2>
             <hr />
             {% if template_data.error %}
-            <div class="alert alert-danger" role="alert">
-              {{ template_data.error }}
-            </div>
+            <div class="alert alert-danger" role="alert">{{ template_data.error }}</div>
             {% endif %}
             <form method="POST">
               {% csrf_token %}
